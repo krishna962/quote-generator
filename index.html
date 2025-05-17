@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Quote Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💬 AI Quote Generator</h1>
+    <div id="quoteBox">
+      <p id="quote">Loading...</p>
+      <p id="author"></p>
+      <p id="language">🌐 Language: Detecting...</p>
+      <p id="sentiment">🧠 Sentiment: Calculating...</p>
+    </div>
+    <div class="buttons">
+      <button onclick="getQuote()">🎲 New Quote</button>
+      <button onclick="speakQuote()">🔊 Speak</button>
+      <button onclick="copyToClipboard()">📋 Copy</button>
+      <button onclick="tweetQuote()">🐦 Tweet</button>
+      <button onclick="saveFavorite()">⭐ Save</button>
+    </div>
+    <div id="favorites">
+      <h3>⭐ Favorite Quotes</h3>
+      <ul id="favList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
